@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álamo benefícios</title>
+    <!-- <link rel="short icon" href="<?= $BASE_URL ?>img/icone-alamo.png"> -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.css"
+        integrity="sha512-drnvWxqfgcU6sLzAJttJv7LKdjWn0nxWCSbEAtxJ/YYaZMyoNLovG7lPqZRdhgL1gAUfa+V7tbin8y+2llC1cw=="
+        crossorigin="anonymous" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FONT -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;800&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="../../assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav data-aos="fade-left">
+            <img src="./img/logo-alamobeneficios.png" alt="Logo Álamo Benefícios">
+            <ul>
+                <li><a href="#cobertura">Cobertura</a></li>
+                <li><a href="#vantagens">Vantagens</a></li>
+                <li><a href="#fera">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="main-section" data-aos="fade-right">
+            <video src="./img/videoplayback.mp4" autoplay muted loop></video>
+
+            <div class="content-text">
+                <p>SE VOCÊ AMA O SEU CARRO, VOCÊ É ALAMO.</p>
+                <h1>PROTEÇÃO ACESSÍVEL,</h1>
+                <h2>RÁPIDA E SEM BUROCRACIA!</h2>
+                <p>Carro, Moto e Caminhões. Até 100% da tabela FIPE.</p>
+            </div>
+
+            <div id="content-form">
+                <h2>SIMULAÇÃO RÁPIDA!</h2>
+                <p>Deixe aqui seu nome e telefone!</p>
+                <form class="form" id="formsc" action="./email.php" method="post">
+
+                    <div class="input-box">
+                        <!-- <label for="name"></label> -->
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Nome" required>
+                    </div>
+                    <div class="input-box">
+                        <!-- <label for="phone"></label> -->
+                        <input type="text" class="form-control" id="telephone" name="telephone" placeholder="Whatsapp"
+                            required>
+                    </div>
+
+                    <div class="input-box">
+                        <!-- <label for="email"></label> -->
+                        <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <!-- <label for="email"></label> -->
+                        <input type="placa" class="form-control" id="placa" name="placa" placeholder="Placa" required>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="cards-section" data-aos="fade-up">
+
+            <div class="card-box">
+                <img src="./img/carros-1.jpg" alt="Imagem de um carro">
+                <button> <a href="#content-form">Faça uma simulação</a></button>
+                <div class="options">
+                    <p>Carros</p>
+                    <li>
+                        <ul>– Carros de passeio</ul>
+                        <ul>– Carros de leilão</ul>
+                        <ul>– Carros de aplicativo</ul>
+                        <ul>– E mais!</ul>
+                    </li>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <img src="./img/motos-1.jpg" alt="Imagem de uma moto" id="moto-img">
+                <button> <a href="#content-form">Faça uma simulação</a></button>
+                <div class="options">
+                    <p>Motos</p>
+                    <li>
+                        <ul>– Todas as cilindradas</ul>
+                        <ul>– Motos de aplicativo</ul>
+                        <ul>– Motos de delivery</ul>
+                        <ul>– E mais!</ul>
+                    </li>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <img src="./img/fiorino.webp" alt="">
+                <button> <a href="#content-form">Faça uma simulação</a></button>
+                <div class="options">
+                    <p>Utilitários</p>
+                    <li>
+                        <ul>– SUV</ul>
+                        <ul>– Caminhonetes</ul>
+                        <ul>– Vans de carga</ul>
+                        <ul>– E mais!</ul>
+                    </li>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <img src="./img/caminhao-1.jpg" alt="">
+                <button> <a href="#content-form">Faça uma simulação</a></button>
+                <div class="options">
+                    <p>Caminhões</p>
+                    <li>
+                        <ul>– Cavalo mecânico</ul>
+                        <ul>– Agregados</ul>
+                        <ul>– Implementos</ul>
+                        <ul>– E mais!</ul>
+                    </li>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" data-aos="fade-up">
+            <img src="./img/about.webp" alt="">
+            <div class="about-list">
+                <h2>PROTEJA O SEU PATRIMÔNIO COM A ÁLAMO.</h2>
+                <h4>Conheça alguns dos muitos benefícios Álamo.</h4>
+                <li>
+                    <ul><i class="fa-solid fa-circle-check"></i>Proteção para Carro, Caminhonete, Van, Aplicativo,
+                        Frota, Moto e Caminhão.
+                    </ul>
+                    <ul><i class="fa-solid fa-circle-check"></i>Cobertura: Roubo, Furto, Colisão, Perda Total, Incêndio,
+                        Fenômenos da Natureza.
+                    </ul>
+                    <ul><i class="fa-solid fa-circle-check"></i>Cobertura de Vidros, Faróis, Retrovisores e Para-brisas
+                    </ul>
+                    <ul><i class="fa-solid fa-circle-check"></i>Cobertura Nacional
+                    </ul>
+                    <ul><i class="fa-solid fa-circle-check"></i>Assistência 24 Horas
+                    </ul>
+                    <ul><i class="fa-solid fa-circle-check"></i>Proteção a Terceiros de até R$ 200 mil.
+                    </ul>
+                    <ul><button> <a href="#content-form">Faça uma simulação</a></button></ul>
+                </li>
+            </div>
+        </section>
+
+        <section class="about-section" id="second-about" data-aos="fade-right">
+            <img src="./img/painel.webp" alt="">
+            <div class="about-list" id="second-about-list">
+                <h2>BENEFÍCIOS PARA VOCÊ,</h2>
+                <h2>SEU CARRO E SUA FAMÍLIA.</h2>
+                <li>
+                    <ul>A Álamo é a proteção que o seu carro precisa, com benefícios para você e toda a sua família.
+
+                    </ul>
+                    <ul>
+                        Além da nossa sede no Rio de Janeiro, possuímos filiais em Porto Alegre, Curitiba e São Paulo e
+                        regionais em diversos outros pontos do Brasil, com assistência 24h em todo o território
+                        nacional.
+                    </ul>
+                    <ul>
+                        Nossa equipe conta com profissionais altamente qualificados e uma estrutura tecnológica para
+                        gerir todas as etapas do processo e garantir a satisfação total dos nossos associados.
+                    </ul>
+                    <ul><button> <a href="#content-form">Faça uma simulação</a></button></ul>
+                </li>
+            </div>
+        </section>
+
+        <section class="imgs-section" data-aos="fade-left">
+            <img src="./img/antesxdepois.webp" alt="">
+            <img src="./img/mala.webp" alt="">
+        </section>
+
+        <section class="benefits" id="cobertura" data-aos="fade-right">
+            <h2>COMPARE E COMPROVE:</h2>
+            <br>
+            <h4>Os melhores benefícios para você.</h4>
+            <div id="container-benefits">
+                <div id="card-benefits">
+                    <img src="./img/icons/rob-1-2.webp" alt="">
+                    <p>Roubo e Furto</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/coli-1-1.webp" alt="">
+                    <p>Colisão</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/fogo-1-1.webp" alt="">
+                    <p>Incêndio</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/natural-1-1-1.webp" alt="" id="fenomenos">
+                    <p>Fenômenos da natureza</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/customer-support_94495662-1-1.webp" alt="">
+                    <p>Assistência 24h</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/reb-1.webp" alt="">
+                    <p>Guincho até 1000 km</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/chav-1-1.webp" alt="">
+                    <p>Chaveiro</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/hotel-1-1.webp" alt="">
+                    <p>Assistência Residencial</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/icon-funeral-1-2.webp" alt="">
+                    <p>Assistência Funeral</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/icon-pet-1-2.webp" alt="">
+                    <p>Assistência Pet</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/icon-desconto-2.webp" alt="">
+                    <p>Clube de Vantagens</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/subs-1-1.webp" alt="">
+                    <p>Carro reserva</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/icon-tele-1-2.webp" alt="">
+                    <p>Telemedicina</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/vid-1-1.webp" alt="">
+                    <p>Assistência Vidros</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/icon-tele-2-2.webp" alt="">
+                    <p>Consultas e exames com até 70% de desconto</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/icon-com-2.webp" alt="">
+                    <p>Desconto em combustível</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/icon-para-2.webp" alt="">
+                    <p>Troca de para-brisa</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/icon-ter-2.webp" alt="">
+                    <p>Proteção a terceiros de até R$ 200 mil</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/icon-bli-2.webp" alt="">
+                    <p>Proteção para blindagem</p>
+                </div>
+                <div id="card-benefits">
+                    <img src="./img/icons/icon-bra-2.webp" alt="">
+                    <p>Cobertura nacional</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="about-section" id="vantagens" data-aos="fade-right">
+            <img src="./img/Giba-5-2.webp" alt="">
+            <div class="about-list" id="vantagens-about">
+                <h2>UTILIZE O CLUBE ÁLAMO, COM VANTAGENS E DESCONTOS PARA VOCÊ ECONOMIZAR TODOS OS DIAS.</h2>
+                <h4>Participação gratuita no
+                    <span>Clube de Descontos</span>
+                </h4>
+                <li>
+                    <ul>Associando-se a <span>ÁLAMO</span> você ja esta participando. Além de ficar tranquilo com o seu
+                        patrimônio, você também é incluído no <span>CLUBE DE VANTAGENS ÁLAMO.</span> O maior e mais
+                        vantajoso clube de descontos do Brasil.
+                    </ul>
+                    <ul>São milhares de <span>DESCONTOS </span> em vários estabelecimentos, como:
+                        <span>RESTAURANTES,</span> <span>CLÍNICAS</span> , <span>LOJAS VIRTUAIS</span> E
+                        <span>ACADEMIAS</span> .
+                    </ul>
+                    <ul><span> APRESENTE SEU CARTÃO FÍSICO OU VIRTUAL EM UM ESTABELECIMENTO OU UTILIZE UM CUPOM DE
+                            DESCONTO, E PRONTO!</span>
+                    </ul>
+                </li>
+            </div>
+        </section>
+
+        <section class="about-section" id="fera" data-aos="fade-left">
+            <div class="about-list">
+                <h2>PROTEÇÃO IDEAL PARA SEU VEÍCULO, COM O MELHOR CUSTO-BENEFÍCIO!</h2>
+
+                <li>
+                    <ul><i class="fa-solid fa-circle-check"></i>Sem consulta ao SPC e Serasa
+                    </ul>
+                    <ul><i class="fa-solid fa-circle-check"></i>Sem analisar de Perfil de Condutor
+                    </ul>
+                    <ul><i class="fa-solid fa-circle-check"></i>Fácil e sem burocracia
+                    </ul>
+                    <ul><i class="fa-solid fa-circle-check"></i>Valor justo
+                    </ul>
+                    <ul><i class="fa-solid fa-circle-check"></i>A melhor Assistência 24 horas do Brasil
+                    </ul>
+                    <ul><button> <a href="#content-form">Faça uma simulação</a></button></ul>
+                </li>
+            </div>
+            <img src="./img/Felipe-Fera-2-2.webp" alt="">
+        </section>
+
+        <section class="jobs" > 
+            <div id="text-jobs" data-aos="fade-left">
+                <p><span>SEJA UM CONSULTOR GÊNIAL DA ÁLAMO</span></p>
+                <p>Descubra a liberdade de ganhar rendimentos extras de forma autônoma e simples.</p>
+                <p>Tenha flexibilidade de horário e localização para viver a vida do seu jeito.</p>
+                <p></p>
+                
+            </div>
+            <div id="btn-jobs">
+                                <!-- Botão para acionar modal -->
+                <button id="btn-second-form" type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+                Trabalhe conosco
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                    <form class="second-form">
+                        <div class="second-title">Seja um consultor Gênial </div>
+                        <input type="text" placeholder="Nome completo" class="input">
+                        <input type="email" placeholder="Email" class="input">
+                        <input type="telephone" placeholder="Telefone" class="input">
+                        <button>Enviar</button>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <a href="https://wa.me/554184274592" class="whatsapp-fixo" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+</html>
